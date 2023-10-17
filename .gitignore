@@ -2,6 +2,5 @@ apikey.js
 node_modules
 package.json
 package-lock.json
-signup/db.js
+signup/db_key.js
 .gitignore
-db.js

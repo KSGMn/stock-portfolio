@@ -1,11 +1,12 @@
+const my = require("./db_key");
+
 var mysql = require("mysql2");
 var db = mysql.createConnection({
-  host: "localhost",
-  user: "User1",
-  password: "12345678",
-  database: "User",
+  host: my.host,
+  user: my.user,
+  password: my.password,
+  database: my.database,
 });
 db.connect();
 
 module.exports = db;
-//숨기기
