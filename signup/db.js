@@ -8,3 +8,4 @@ var db = mysql.createConnection({
 db.connect();
 
 module.exports = db;
+//숨기기
