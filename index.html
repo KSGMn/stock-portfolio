@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="/index.css" />
+    <script src="./include.js" defer></script>
+    <script type="module" src="./index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/6921b3239e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper__include">
+      <div w3-include-html="header_logout.html"></div>
+    </div>
+    <div class="wrapper__body">
+      <div class="body__header">
+        <div class="card1">
+          <div class="my__assets" id="myName"></div>
+          <div id="a">34,500,000원</div>
+          <div id="b">수익률 15%</div>
+          <div id="c">평가손익 4,500,000원</div>
+        </div>
+        <div class="card2">
+          <div class="card2_box">
+            <div id="d">투자중인 기업 15개</div>
+            <div id="e">수익 기업 10개</div>
+            <div id="f">손실 기업 5개</div>
+          </div>
+          <canvas id="bar-chart-horizontal" width="600" height="100"></canvas>
+        </div>
+      </div>
+      <div class="body__body">
+        <div class="body__card1">
+          <div class="my__rule__title">월별 수익률</div>
+          <div class="line_chart_box">
+            <canvas id="line-chart"></canvas>
+          </div>
+        </div>
+        <div class="body__card2">
+          <div class="my__rule__title">나만의 투자 원칙</div>
+
+          <ul id="list_ul"></ul>
+          <form action="/user_rule/add" method="post">
+            <div class="my__rule__footer">
+              <input
+                type="text"
+                placeholder="메모를 입력하세요"
+                id="memo_text"
+                name="memo"
+                onclick="focus"
+              />
+              <button id="memo_save_btn">버튼</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

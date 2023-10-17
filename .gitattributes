@@ -1,0 +1,2 @@
+# Normalize line endings for package-lock.json
+package-lock.json text eol=lf

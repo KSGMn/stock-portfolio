@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="./styles/portfolio.css" />
+    <script src="./include.js" defer></script>
+    <script type="module" src="./portfolio.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/6921b3239e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper__include">
+      <div w3-include-html="header_logout.html"></div>
+    </div>
+    <div class="wrapper__body">
+      <div id="myName" name="myName"></div>
+      <div class="body__box">
+        <div class="table__menu">
+          <div class="table__menu__text">종목코드</div>
+          <div class="table__menu__text">종목명</div>
+          <div class="table__menu__text">현재가</div>
+          <div class="table__menu__text">평균매입가</div>
+          <div class="table__menu__text">잔고수량</div>
+          <div class="table__menu__text">평가손익</div>
+          <div class="table__menu__text">수익률</div>
+
+          <form action="">
+            <button id="all_remove">전체삭제</button>
+          </form>
+        </div>
+
+        <div class="table__body"></div>
+        <div class="table__footer">
+          <div class="table__footer__box">
+            <span class="footer_text">종목명</span>
+            <input
+              class="footer_input"
+              type="text"
+              id="add1"
+              name="add1"
+              onclick="focus"
+            />
+            <span class="footer_text">잔고수량</span>
+            <input class="footer_input" type="number" id="add2" name="add2" />
+            <span class="footer_text">평균매입가</span>
+            <input class="footer_input" type="number" id="add3" name="add3" />
+          </div>
+          <button id="stock_add_btn">추가</button>
+        </div>
+      </div>
+      <div class="body__box2">
+        <div class="chart__box">
+          <canvas id="chart__canvas" width="380px" height="380x"></canvas>
+        </div>
+        <div class="list__box">
+          <ul id="list_ul"></ul>
+          <form action="/user_memo/add" method="post">
+            <div class="list_box_footer">
+              <input
+                type="text"
+                placeholder="메모를 입력하세요"
+                id="memo_text"
+                name="memo"
+                class="list_footer_input"
+                onclick="focus"
+              />
+              <button id="memo_save_btn">추가</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

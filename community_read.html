@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./community_read.css" />
+    <script src="./include.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/6921b3239e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./community_read.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper__include"></div>
+    <div w3-include-html="header_logout.html"></div>
+    <div class="board">
+      <div class="board__wrapper">
+        <div class="board__header">
+          <div class="number" id="number"></div>
+          <input class="board__title" id="board__title" readonly />
+          <input
+            readonly
+            type="text"
+            class="board__name"
+            name="name"
+            id="name"
+            placeholder="작성자"
+          />
+          <input
+            type="text"
+            class="board__password"
+            name="password"
+            id="password"
+            placeholder="비밀번호"
+            onclick="focus"
+          />
+        </div>
+        <div class="board__desc">
+          <textarea
+            readonly
+            class="text__area"
+            id="text__area__desc"
+          ></textarea>
+        </div>
+        <div class="views" id="views"></div>
+        <div class="board__footer">
+          <button id="created_btn">수정</button>
+          <form action="/user/list/remove" method="post">
+            <button id="remove_btn">삭제</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

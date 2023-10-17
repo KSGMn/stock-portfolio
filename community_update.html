@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./community_update.css" />
+    <script src="./include.js" defer></script>
+    <script src="community_update.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6921b3239e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper__include"></div>
+    <div w3-include-html="header_logout.html"></div>
+    <div class="board">
+      <div class="board__wrapper">
+        <div class="board__header">
+          <input
+            type="text"
+            class="board__title"
+            id="board__title"
+            name="title"
+            placeholder="제목 입력"
+            onclick="focus"
+          />
+          <input
+            type="text"
+            class="board__name"
+            id="board__name"
+            name="name"
+            placeholder="작성자"
+            readonly
+          />
+          <input
+            type="text"
+            class="board__password"
+            id="board__password"
+            name="password"
+            placeholder="비밀번호"
+            readonly
+          />
+        </div>
+        <div class="board__desc">
+          <textarea
+            class="text__area"
+            name="desc"
+            id="text__area__desc"
+            placeholder="내용 입력"
+            onclick="focus"
+          ></textarea>
+        </div>
+        <div class="board__footer">
+          <form action="/user/desc/update" method="post">
+            <button id="update_btn">업데이트</button>
+          </form>
+          <button onclick="history.back()" id="cancle_btn">취소</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

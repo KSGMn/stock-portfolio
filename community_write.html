@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./community_write.css" />
+    <script src="./community_write.js" defer></script>
+    <script src="./include.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/6921b3239e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper__include"></div>
+    <div w3-include-html="header_logout.html"></div>
+    <div class="board">
+      <div class="board__wrapper">
+        <div class="board__header">
+          <input
+            type="text"
+            class="board__title"
+            name="title"
+            id="title"
+            placeholder="제목 입력"
+            onclick="focus"
+          />
+          <input
+            type="text"
+            class="board__name"
+            name="name"
+            id="name"
+            placeholder="작성자"
+            onclick="focus"
+          />
+          <input
+            type="text"
+            class="board__password"
+            name="password"
+            id="password"
+            placeholder="비밀번호"
+            onclick="focus"
+          />
+        </div>
+        <div class="board__desc">
+          <textarea
+            class="text__area"
+            name="desc"
+            id="desc"
+            placeholder="내용 입력"
+            onclick="focus"
+          ></textarea>
+        </div>
+        <div class="board__footer">
+          <button class="write_btn" onclick="history.back()">취소</button>
+
+          <button class="write_btn" type="submit" id="save_btn">
+            <form action="/user/board_save" method="post" id="saveForm">
+              등록
+            </form>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --card-color: white;
+  --button-background: #3498db; /* 배경색 변수 */
+  --button-text-color: #fff; /* 텍스트 색상 변수 */
+  --button-padding: 10px 20px; /* 내부 여백 변수 */
+  --button-border-radius: 5px; /* 모서리 둥글게 변수 */
+  --button-hover-background: #2980b9; /* 호버 시 배경색 변수 */
+}
+
+html,
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e5e5;
+}
+
+.rule_remove_btn {
+  background: none;
+  border: none;
+  width: 95px;
+}
+
+.rule_remove_btn_ex {
+  background: none;
+  border: none;
+  width: 95px;
+}
+
+.fas {
+  cursor: pointer;
+  color: var(--button-background);
+  font-size: 24px;
+}
+
+.fas:hover {
+  color: var(--button-hover-background);
+}
+
+#memo_save_btn {
+  width: 95px;
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: none;
+  padding: var(--button-padding);
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#memo_save_btn:hover {
+  background-color: var(--button-hover-background);
+}
+
+.wrapper__body {
+  margin-top: 2px;
+  padding: 30px;
+}
+
+.body__header {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 15px;
+}
+
+.itmsNm {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.clpr {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.vs {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.fltRt {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.basDt {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-color);
+  width: 50%;
+  margin-right: 30px;
+  border-radius: 15px;
+  padding: 30px;
+  justify-content: space-evenly;
+}
+
+.my__assets {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-color);
+  width: 50%;
+  border-radius: 15px;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.card2_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+  justify-content: space-evenly;
+}
+
+#d,
+#e,
+#f {
+  display: flex;
+  width: 150px;
+  justify-content: center;
+}
+
+/* .card3 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-color);
+  width: 33.3%;
+  border-radius: 15px;
+  padding: 30px;
+  justify-content: space-evenly;
+} */
+
+.body__body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 520px;
+  padding-top: 15px;
+}
+
+.body__card1 {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: 100%;
+  background-color: var(--card-color);
+  margin-right: 15px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.line_chart_box {
+  margin-top: 20px;
+  height: 390px;
+  padding: 10px;
+}
+
+.body__list ul {
+  height: 100%;
+  width: 50%;
+  /* list-style-type: disc; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* padding-left: 0; */
+}
+
+.body__list ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ul_box {
+  margin-left: 15px;
+}
+
+.body__card2 {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  background-color: var(--card-color);
+  margin-left: 15px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.my__rule__title {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.my__rule {
+  height: 390px;
+}
+
+.body__card2 ul {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 100%;
+  /* padding-left: 0; */
+  margin-top: 20px;
+  padding: 10px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.body__card2 ul::-webkit-scrollbar {
+  width: 3px; /* 스크롤바의 너비 */
+}
+
+.body__card2 ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  align-items: center;
+  padding: 10px 0px 10px 0px;
+  /* border-bottom: 1px solid black; */
+  margin-bottom: 10px;
+}
+
+.body__card2 ul li::before {
+  content: "•";
+  margin-right: 15px;
+  font-size: 25px;
+  align-self: center;
+  color: var(--button-background);
+}
+
+.my__rule__footer {
+  width: 100%;
+  float: right;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.list_span,
+.list_span_ex {
+  width: 80%;
+}
+
+#memo_text {
+  border: none;
+  border-bottom: 2px solid #e5e5e5;
+  outline: none;
+  width: 80%;
+  margin-right: 10px;
+}
+
+#memo_text:hover {
+  border-bottom: 2px solid var(--button-background);
+}
+
+@media (max-width: 768px) {
+  .body__header,
+  .body__body {
+    flex-direction: column; /* 화면이 작을 때 세로 배치로 변경 */
+    height: 100vh;
+    margin-top: 0px;
+    padding: 0;
+  }
+
+  .card1,
+  .card2 {
+    width: 100%; /* 화면이 작을 때 카드 너비를 100%로 변경 */
+    margin-right: 0; /* 화면이 작을 때 마진 제거 */
+    margin-bottom: 30px;
+    height: 50%;
+  }
+
+  .body__card1,
+  .body__card2 {
+    width: 100%; /* 카드 너비를 100%로 변경 */
+    margin-right: 0; /* 마진 제거 */
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+
+  .body__list ul {
+    width: 100%; /* 리스트 너비를 100%로 변경 */
+  }
+}

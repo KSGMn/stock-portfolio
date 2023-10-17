@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="./community.css" />
+    <script src="./include.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/6921b3239e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="community_board.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper__include">
+      <div w3-include-html="header_logout.html"></div>
+    </div>
+    <div class="wrapper__body">
+      <div class="body__board">
+        <div class="board__title">
+          <span class="board__title__text">게시판</span>
+          <span class="write_btn_box"
+            ><a href="/user/board_write" class="write_btn">글쓰기</a></span
+          >
+        </div>
+        <hr class="light__line" />
+        <div class="board__header">
+          <span class="number">번호</span>
+          <span class="title">제목</span>
+          <span class="wirter">작성자</span>
+          <span class="wirter_day">시간</span>
+          <span class="check">조회수</span>
+        </div>
+        <hr class="light__line" />
+        <div class="board__body"></div>
+      </div>
+    </div>
+  </body>
+</html>

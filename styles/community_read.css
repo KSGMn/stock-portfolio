@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --card-color: aliceblue;
+  --button-background: #3498db; /* 배경색 변수 */
+  --button-text-color: #fff; /* 텍스트 색상 변수 */
+  --button-padding: 10px 20px; /* 내부 여백 변수 */
+  --button-border-radius: 5px; /* 모서리 둥글게 변수 */
+  --button-hover-background: #2980b9; /* 호버 시 배경색 변수 */
+}
+
+a {
+  text-decoration: none;
+  color: var(--button-text-color);
+}
+
+#created_btn,
+#remove_btn {
+  width: 95px;
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: none;
+  padding: var(--button-padding);
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+#created_btn:hover,
+#remove_btn:hover {
+  background-color: var(--button-hover-background);
+}
+
+html,
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.board {
+  margin-top: 2px;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background-color: #e5e5e5;
+}
+
+.board__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 700px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.board__header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.board__desc {
+  width: 100%;
+  height: 580px;
+}
+
+.board__footer {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: end;
+}
+
+.board__title {
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 60%;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.3), 0px 2px 2px rgba(0, 0, 0, 0.3),
+    -2px 0px 2px rgba(0, 0, 0, 0.3), 2px 0px 2px rgba(0, 0, 0, 0.3);
+}
+.board__name {
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 20%;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.3), 0px 2px 2px rgba(0, 0, 0, 0.3),
+    -2px 0px 2px rgba(0, 0, 0, 0.3), 2px 0px 2px rgba(0, 0, 0, 0.3);
+}
+.board__password {
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 20%;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.3), 0px 2px 2px rgba(0, 0, 0, 0.3),
+    -2px 0px 2px rgba(0, 0, 0, 0.3), 2px 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+.text__area {
+  resize: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.3), 0px 2px 2px rgba(0, 0, 0, 0.3),
+    -2px 0px 2px rgba(0, 0, 0, 0.3), 2px 0px 2px rgba(0, 0, 0, 0.3);
+}

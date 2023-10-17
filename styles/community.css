@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  --card-color: white;
+}
+
+html,
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper__body {
+  margin-top: 2px;
+  height: 100%;
+  padding: 30px;
+  background-color: #e5e5e5;
+}
+
+.body__board {
+  height: 600px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: var(--card-color);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.board__title {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 800;
+  justify-content: space-between;
+}
+
+.board__title__text {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.write_btn_box {
+  width: 15%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.write_btn {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  padding: 4px 8px;
+}
+
+.write_btn:hover {
+  background-color: #3498db;
+  border-radius: 4px;
+}
+
+.board__header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.number {
+  width: 15%;
+  text-align: center;
+}
+
+.title {
+  width: 40%;
+  text-align: center;
+}
+
+.wirter {
+  width: 15%;
+  text-align: center;
+}
+
+.wirter_day {
+  width: 15%;
+  text-align: center;
+}
+
+.check {
+  width: 15%;
+  text-align: center;
+}
+
+.light_line {
+  height: 2px;
+  border: none;
+  background-color: black;
+}
+
+.board__body {
+  width: 100%;
+  height: 420px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.board__body::-webkit-scrollbar {
+  width: 3px; /* 스크롤바의 너비 */
+}
+
+.list {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.list:hover {
+  background-color: #3498db;
+  color: white;
+}
