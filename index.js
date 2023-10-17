@@ -8,7 +8,6 @@ const clprList = new Array(length);
 function aaa(data1, length, MyApiKey) {
   const fetchPromises = [];
   const apiKey = MyApiKey;
-  // "wqzu4Mo%2FOHjXQDLLn6WM%2FPwT6VbIBNg1%2BProaIyLJ3Pxy6GzVihcd1bIOSdvMe9vF%2FuRJ7JZwcT%2F4nvX8V1a4g%3D%3D";
 
   for (let i = 0; i < length; i++) {
     const config = {
